@@ -11,10 +11,16 @@ var getLinks = () => {
             let l = await page.evaluate(() => {
               
               let results = [];
+              let _batch = [];
+
               let links = document.querySelectorAll('td.jd-linkcol');
               
               links.forEach(link => {
-                results.push(link.firstChild.href)
+                _batch.push(link.firstChild.href)
+                if(_batch.length == 500){
+                  results.push(_batch);
+                  _batch = [];
+                }
               });
   
               return results;
@@ -29,6 +35,11 @@ var getLinks = () => {
   }
   
 getLinks().then(_links => {
-    fs.writeFileSync('./links.json', JSON.stringify(_links));
+  var batchNo = 1;
+  _links.forEach(batch => {
+    fs.writeFileSync(`./class_links/classes_${batchNo}.json`, JSON.stringify(batch));
+    batchNo++;
+  })
+    
 });
   
