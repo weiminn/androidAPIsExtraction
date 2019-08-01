@@ -11,16 +11,20 @@ var scrapePermission = async (link) => {
           
           let permissions = await page.evaluate(() => {
             let results = [];
+
             let items = document.querySelectorAll('h3.api-name');
             items.forEach((item) => {
-              let apiName = item.textContent;
+
               let div = item.parentElement.parentElement;
               let sibs = div.children;
+
               for(var i = 0; i < sibs.length; i++){
                 if(sibs[i].textContent.includes("Manifest.permission.")){
+
                   results.push({
-                    'api': apiName,
-                    'permission': sibs[i].textContent
+                    'class': document.querySelector('td.jd-inheritance-class-cell[colspan="1"]').textContent.trim(),
+                    'method': item.textContent,
+                    'permissionText': sibs[i].textContent.trim()
                   });
                   break;
                 }
@@ -31,7 +35,7 @@ var scrapePermission = async (link) => {
 
           browser.close();
           return resolve(permissions);
-          
+
       } catch (e) {
           return reject(e);
       }
@@ -54,7 +58,7 @@ var recursiveScrape = () => {
     if(links.length > 0){
       recursiveScrape();
     } else {
-      fs.writeFileSync('./permissions2.json', JSON.stringify(permissions));
+      fs.writeFileSync('./permissions_new.json', JSON.stringify(permissions));
     }
   });
 }
