@@ -23,7 +23,7 @@ var scrapePermission = async (link) => {
 
                   results.push({
                     'class': document.querySelector('td.jd-inheritance-class-cell[colspan="1"]').textContent.trim(),
-                    'method': item.textContent,
+                    'api': item.textContent,
                     'permissionText': sibs[i].textContent.trim()
                   });
                   break;
@@ -47,14 +47,14 @@ var links = JSON.parse(fs.readFileSync(`./class_links/classes_${batchNo}.json`))
 var permissions = [];
 
 var recursiveScrape = () => {
+
   var _link = links.pop();
+  console.log(_link, links.length);
+
   scrapePermission(_link).then((_per) => {
 
-    console.log(_link, links.length);
-    // console.log(_per);
-
-    permissions = permissions.concat(_per);
     console.log(_per);
+    permissions = permissions.concat(_per);
 
     if(links.length > 0){
       recursiveScrape();
