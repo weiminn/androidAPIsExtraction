@@ -42,7 +42,8 @@ var scrapePermission = async (link) => {
   });
 }
 
-var links = JSON.parse(fs.readFileSync('./links.json'));
+var batchNo = 1;
+var links = JSON.parse(fs.readFileSync(`./class_links/classes_${batchNo}.json`));
 var permissions = [];
 
 var recursiveScrape = () => {
@@ -58,7 +59,7 @@ var recursiveScrape = () => {
     if(links.length > 0){
       recursiveScrape();
     } else {
-      fs.writeFileSync('./permissions_new.json', JSON.stringify(permissions));
+      fs.writeFileSync(`./output/apis_${batchNo}.json`, JSON.stringify(permissions));
     }
   });
 }
