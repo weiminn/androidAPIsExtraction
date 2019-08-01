@@ -4,9 +4,10 @@ const fs = require('fs');
 var scrapePermission = async (link) => {
   return new Promise(async (resolve, reject) => {
       try {
+
           const browser = await puppeteer.launch();
           const page = await browser.newPage();
-          await page.goto(link);
+          await page.goto(link, {waitUntil: 'load', timeout: 0});
           
           let permissions = await page.evaluate(() => {
             let results = [];
@@ -27,8 +28,10 @@ var scrapePermission = async (link) => {
             });
             return results;
           });
+
           browser.close();
           return resolve(permissions);
+          
       } catch (e) {
           return reject(e);
       }
@@ -42,10 +45,11 @@ var recursiveScrape = () => {
   var _link = links.pop();
   scrapePermission(_link).then((_per) => {
 
-    // console.log(_link, links.length);
+    console.log(_link, links.length);
     // console.log(_per);
 
     permissions = permissions.concat(_per);
+    console.log(_per);
 
     if(links.length > 0){
       recursiveScrape();
