@@ -1,0 +1,217 @@
+[
+    {
+        "class": "android.provider.MediaStore",
+        "api": "ACTION_IMAGE_CAPTURE",
+        "permissionText": "Note: if you app targets M and above\n and declares as using the Manifest.permission.CAMERA permission which\n is not granted, then attempting to use this action will result in a SecurityException."
+    },
+    {
+        "class": "android.provider.MediaStore",
+        "api": "ACTION_VIDEO_CAPTURE",
+        "permissionText": "Note: if you app targets M and above\n and declares as using the Manifest.permission.CAMERA permission which\n is not granted, then atempting to use this action will result in a SecurityException."
+    },
+    {
+        "class": "android.provider.MediaStore",
+        "api": "setRequireOriginal",
+        "permissionText": "If the original file contents cannot be provided, a\n UnsupportedOperationException will be thrown when the returned\n Uri is used, such as when the caller doesn't hold\n Manifest.permission.ACCESS_MEDIA_LOCATION."
+    },
+    {
+        "class": "android.media.session.MediaSessionManager",
+        "api": "addOnActiveSessionsChangedListener",
+        "permissionText": "Add a listener to be notified when the list of active sessions\n changes.This requires the\n android.Manifest.permission.MEDIA_CONTENT_CONTROL permission be held by\n the calling app. You may also retrieve this list if your app is an\n enabled notification listener using the\n NotificationListenerService APIs, in which case you must pass the\n ComponentName of your enabled listener. Updates will be posted to\n the thread that registered the listener."
+    },
+    {
+        "class": "android.media.session.MediaSessionManager",
+        "api": "addOnActiveSessionsChangedListener",
+        "permissionText": "Add a listener to be notified when the list of active sessions\n changes.This requires the\n android.Manifest.permission.MEDIA_CONTENT_CONTROL permission be held by\n the calling app. You may also retrieve this list if your app is an\n enabled notification listener using the\n NotificationListenerService APIs, in which case you must pass the\n ComponentName of your enabled listener. Updates will be posted to\n the handler specified or to the caller's thread if the handler is null."
+    },
+    {
+        "class": "android.media.session.MediaSessionManager",
+        "api": "getActiveSessions",
+        "permissionText": "This requires the android.Manifest.permission.MEDIA_CONTENT_CONTROL\n permission be held by the calling app. You may also retrieve this list if\n your app is an enabled notification listener using the\n NotificationListenerService APIs, in which case you must pass the\n ComponentName of your enabled listener."
+    },
+    {
+        "class": "android.media.session.MediaSessionManager",
+        "api": "isTrustedForMediaControl",
+        "permissionText": "An app is trusted if the app holds the android.Manifest.permission.MEDIA_CONTENT_CONTROL\n permission or has an enabled notification listener."
+    },
+    {
+        "class": "android.media.MediaSession2Service",
+        "api": "onUpdateNotification",
+        "permissionText": "With the notification returned here, the service becomes foreground service when the playback\n is started. Apps must request the permission\n Manifest.permission.FOREGROUND_SERVICE in order to use this API. It becomes\n background service after the playback is stopped."
+    },
+    {
+        "class": "android.media.MediaRecorder.AudioSource",
+        "api": "REMOTE_SUBMIX",
+        "permissionText": "Capturing the remote submix audio requires the\n Manifest.permission.CAPTURE_AUDIO_OUTPUT permission.\n This permission is reserved for use by system components and is not available to\n third-party applications."
+    },
+    {
+        "class": "android.media.MediaRecorder.AudioSource",
+        "api": "VOICE_CALL",
+        "permissionText": "Capturing from VOICE_CALL source requires the\n Manifest.permission.CAPTURE_AUDIO_OUTPUT permission.\n This permission is reserved for use by system components and is not available to\n third-party applications."
+    },
+    {
+        "class": "android.media.MediaRecorder.AudioSource",
+        "api": "VOICE_DOWNLINK",
+        "permissionText": "Capturing from VOICE_DOWNLINK source requires the\n Manifest.permission.CAPTURE_AUDIO_OUTPUT permission.\n This permission is reserved for use by system components and is not available to\n third-party applications."
+    },
+    {
+        "class": "android.media.MediaRecorder.AudioSource",
+        "api": "VOICE_UPLINK",
+        "permissionText": "Capturing from VOICE_UPLINK source requires the\n Manifest.permission.CAPTURE_AUDIO_OUTPUT permission.\n This permission is reserved for use by system components and is not available to\n third-party applications."
+    },
+    {
+        "class": "android.media.MediaPlayer",
+        "api": "setWakeMode",
+        "permissionText": "This function has the MediaPlayer access the low-level power manager\n service to control the device's power usage while playing is occurring.\n The parameter is a combination of PowerManager wake flags.\n Use of this method requires Manifest.permission.WAKE_LOCK\n permission.\n By default, no attempt is made to keep the device awake during playback."
+    },
+    {
+        "class": "android.media.MediaExtractor",
+        "api": "setDataSource",
+        "permissionText": "Parameters\n      \n        context\n        \n          Context: the Context to use when resolving the Uri\n This value must never be null.\n      \n      \n        uri\n        \n          Uri: the Content URI of the data you want to extract from.\n\n When uri refers to a network file the\n Manifest.permission.INTERNET permission is required.\n\n This value must never be null.\n      \n      \n        headers\n        \n          Map: the headers to be sent together with the request for the data.\n        This can be null if no specific headers are to be sent with the\n        request.\n \n This value may be null."
+    },
+    {
+        "class": "android.media.MediaExtractor",
+        "api": "setDataSource",
+        "permissionText": "Parameters\n      \n        path\n        \n          String: the path of the file, or the http URL of the stream\n\n When path refers to a local file, the file may actually be opened by a\n process other than the calling application.  This implies that the pathname\n should be an absolute path (as any other process runs with unspecified current working\n directory), and that the pathname should reference a world-readable file.\n As an alternative, the application could first open the file for reading,\n and then use the file descriptor form setDataSource(java.io.FileDescriptor).\n\n When path refers to a network file the\n Manifest.permission.INTERNET permission is required.\n \n This value must never be null."
+    },
+    {
+        "class": "android.media.MediaExtractor",
+        "api": "setDataSource",
+        "permissionText": "Parameters\n      \n        path\n        \n          String: the path of the file, or the http URL\n\n When path refers to a network file the\n Manifest.permission.INTERNET permission is required.\n\n This value must never be null.\n      \n      \n        headers\n        \n          Map: the headers associated with the http request for the stream you want to play.\n        This can be null if no specific headers are to be sent with the\n        request.\n \n This value may be null."
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "GPS_PROVIDER",
+        "permissionText": "This provider determines location using\n satellites. Depending on conditions, this provider may take a while to return\n a location fix. Requires the permission\n Manifest.permission.ACCESS_FINE_LOCATION."
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "PASSIVE_PROVIDER",
+        "permissionText": "This provider can be used to passively receive location updates\n when other applications or services request them without actually requesting\n the locations yourself.  This provider will return locations generated by other\n providers.  You can query the Location#getProvider() method to determine\n the origin of the location update. Requires the permission\n Manifest.permission.ACCESS_FINE_LOCATION, although if the GPS is\n not enabled this provider might only return coarse fixes."
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "addGpsStatusListener",
+        "permissionText": "Adds a GPS status listener.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "addNmeaListener",
+        "permissionText": "Adds an NMEA listener.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "addNmeaListener",
+        "permissionText": "Adds an NMEA listener.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "addProximityAlert",
+        "permissionText": "Before API version 17, this method could be used with\n Manifest.permission.ACCESS_FINE_LOCATION or\n Manifest.permission.ACCESS_COARSE_LOCATION.\n From API version 17 and onwards, this method requires\n Manifest.permission.ACCESS_FINE_LOCATION permission.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "getGpsStatus",
+        "permissionText": "Retrieves information about the current status of the GPS engine.\n This should only be called from the GpsStatus.Listener#onGpsStatusChanged\n callback to ensure that the data is copied atomically.\n\n The caller may either pass in a GpsStatus object to set with the latest\n status information, or pass null to create a new GpsStatus object.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "getLastKnownLocation",
+        "permissionText": "If the provider is currently disabled, null is returned.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "registerGnssMeasurementsCallback",
+        "permissionText": "Registers a GPS Measurement callback.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "registerGnssMeasurementsCallback",
+        "permissionText": "Registers a GPS Measurement callback.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "registerGnssNavigationMessageCallback",
+        "permissionText": "Registers a GNSS Navigation Message callback.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "registerGnssStatusCallback",
+        "permissionText": "Registers a GNSS status callback.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "registerGnssStatusCallback",
+        "permissionText": "Registers a GNSS status callback.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "removeProximityAlert",
+        "permissionText": "Before API version 17, this method could be used with\n Manifest.permission.ACCESS_FINE_LOCATION or\n Manifest.permission.ACCESS_COARSE_LOCATION.\n From API version 17 and onwards, this method requires\n Manifest.permission.ACCESS_FINE_LOCATION permission.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "removeUpdates",
+        "permissionText": "Following this call, updates will no longer\n occur for this listener.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "requestLocationUpdates",
+        "permissionText": "See requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)\n for more detail on how to use this method.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "requestLocationUpdates",
+        "permissionText": "See requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)\n for more detail on how to use this method.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "requestLocationUpdates",
+        "permissionText": "Prior to Jellybean, the minTime parameter was\n only a hint, and some location provider implementations ignored it.\n From Jellybean and onwards it is mandatory for Android compatible\n devices to observe both the minTime and minDistance parameters.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "requestLocationUpdates",
+        "permissionText": "See requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)\n for more detail on how to use this method.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "requestLocationUpdates",
+        "permissionText": "See requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)\n for more detail on how to use this method.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "requestSingleUpdate",
+        "permissionText": "See requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)\n for more detail on how to use this method.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "requestSingleUpdate",
+        "permissionText": "See requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)\n for more detail on how to use this method.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "requestSingleUpdate",
+        "permissionText": "See requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)\n for more detail on how to use this method.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.location.LocationManager",
+        "api": "requestSingleUpdate",
+        "permissionText": "See requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)\n for more detail on how to use this method.\n\n \n Requires Manifest.permission.ACCESS_COARSE_LOCATION or Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.app.KeyguardManager.KeyguardLock",
+        "api": "disableKeyguard",
+        "permissionText": "Disable the keyguard from showing.  If the keyguard is currently\n showing, hide it.  The keyguard will be prevented from showing again\n until reenableKeyguard() is called.\n\n A good place to call this is from Activity.onResume()\n\n Note: This call has no effect while any DevicePolicyManager\n is enabled that requires a password.\n\n \n Requires Manifest.permission.DISABLE_KEYGUARD"
+    },
+    {
+        "class": "android.app.KeyguardManager.KeyguardLock",
+        "api": "reenableKeyguard",
+        "permissionText": "Reenable the keyguard.  The keyguard will reappear if the previous\n call to disableKeyguard() caused it to be hidden.\n\n A good place to call this is from Activity.onPause()\n\n Note: This call has no effect while any DevicePolicyManager\n is enabled that requires a password.\n\n \n Requires Manifest.permission.DISABLE_KEYGUARD"
+    },
+    {
+        "class": "android.app.KeyguardManager",
+        "api": "exitKeyguardSecurely",
+        "permissionText": "Exit the keyguard securely.  The use case for this api is that, after\n disabling the keyguard, your app, which was granted permission to\n disable the keyguard and show a limited amount of information deemed\n safe without the user getting past the keyguard, needs to navigate to\n something that is not safe to view without getting past the keyguard.\n\n This will, if the keyguard is secure, bring up the unlock screen of\n the keyguard.\n\n \n Requires Manifest.permission.DISABLE_KEYGUARD"
+    }
+]

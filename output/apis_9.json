@@ -1,0 +1,312 @@
+[
+    {
+        "class": "android.net.wifi.rtt.WifiRttManager",
+        "api": "startRanging",
+        "permissionText": "Initiate a request to range to a set of devices specified in the RangingRequest.\n Results will be returned in the RangingResultCallback set of callbacks.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION and Manifest.permission.CHANGE_WIFI_STATE and Manifest.permission.ACCESS_WIFI_STATE"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "WIFI_P2P_CONNECTION_CHANGED_ACTION",
+        "permissionText": "Broadcast intent action indicating that the state of Wi-Fi p2p connectivity\n has changed. One extra EXTRA_WIFI_P2P_INFO provides the p2p connection info in\n the form of a WifiP2pInfo object. Another extra EXTRA_NETWORK_INFO provides\n the network info in the form of a NetworkInfo. A third extra provides\n the details of the group.\n\n All of these permissions are required to receive this broadcast:\n Manifest.permission.ACCESS_FINE_LOCATION and\n Manifest.permission.ACCESS_WIFI_STATE"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "WIFI_P2P_PEERS_CHANGED_ACTION",
+        "permissionText": "Broadcast intent action indicating that the available peer list has changed. This\n can be sent as a result of peers being found, lost or updated.\n\n All of these permissions are required to receive this broadcast:\n Manifest.permission.ACCESS_FINE_LOCATION and\n Manifest.permission.ACCESS_WIFI_STATE"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "WIFI_P2P_THIS_DEVICE_CHANGED_ACTION",
+        "permissionText": "The EXTRA_WIFI_P2P_DEVICE extra contains an anonymized version of the device's\n MAC address. Callers holding the android.Manifest.permission#LOCAL_MAC_ADDRESS\n permission can use requestDeviceInfo(WifiP2pManager.Channel, WifiP2pManager.DeviceInfoListener) to obtain the actual MAC address of this\n device.\n\n All of these permissions are required to receive this broadcast:\n Manifest.permission.ACCESS_FINE_LOCATION and\n Manifest.permission.ACCESS_WIFI_STATE"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "addLocalService",
+        "permissionText": "The service information can be cleared with calls to\n  removeLocalService(WifiP2pManager.Channel, WifiP2pServiceInfo, WifiP2pManager.ActionListener) or clearLocalServices(WifiP2pManager.Channel, WifiP2pManager.ActionListener).\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "connect",
+        "permissionText": "If the current device is part of an existing p2p group or has created\n a p2p group with createGroup(WifiP2pManager.Channel, WifiP2pConfig, WifiP2pManager.ActionListener), an invitation to join the group is sent to\n the peer device.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "createGroup",
+        "permissionText": "Application can request for the group details with requestGroupInfo(WifiP2pManager.Channel, WifiP2pManager.GroupInfoListener).\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "createGroup",
+        "permissionText": "Application can request for the group details with requestGroupInfo(WifiP2pManager.Channel, WifiP2pManager.GroupInfoListener).\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "discoverPeers",
+        "permissionText": "Upon receiving a WIFI_P2P_PEERS_CHANGED_ACTION intent, an application\n can request for the list of peers using requestPeers(WifiP2pManager.Channel, WifiP2pManager.PeerListListener).\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "discoverServices",
+        "permissionText": "The application is notified of the response against the service discovery request\n through listener callbacks registered by setServiceResponseListener(WifiP2pManager.Channel, WifiP2pManager.ServiceResponseListener) or\n setDnsSdResponseListeners(WifiP2pManager.Channel, WifiP2pManager.DnsSdServiceResponseListener, WifiP2pManager.DnsSdTxtRecordListener), or setUpnpServiceResponseListener(WifiP2pManager.Channel, WifiP2pManager.UpnpServiceResponseListener).\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "requestDeviceInfo",
+        "permissionText": "This information is also included in the WIFI_P2P_THIS_DEVICE_CHANGED_ACTION\n broadcast event with extra EXTRA_WIFI_P2P_DEVICE.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "requestGroupInfo",
+        "permissionText": "Request p2p group info.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.p2p.WifiP2pManager",
+        "api": "requestPeers",
+        "permissionText": "Request the current list of peers.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "EXTRA_RESULTS_UPDATED",
+        "permissionText": "An app requested too many scans in a certain period of time.\n This may lead to additional scan request rejections via \"scan throttling\" for both\n foreground and background apps.\n Note: Apps holding android.Manifest.permission.NETWORK_SETTINGS permission are\n exempted from scan throttling.\n \n The device is idle and scanning is disabled.\n Wifi hardware reported a scan failure."
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "RSSI_CHANGED_ACTION",
+        "permissionText": "The RSSI (signal strength) has changed.\n\n Receiver Required Permission: android.Manifest.permission.ACCESS_WIFI_STATE"
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "addNetworkSuggestions",
+        "permissionText": "Manifest.permission.CHANGE_WIFI_STATE"
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "getConfiguredNetworks",
+        "permissionText": "Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "getPasspointConfigurations",
+        "permissionText": "Return the list of installed Passpoint configurations.\n\n An empty list will be returned when no configurations are installed.\n\n \n Requires android.Manifest.permission.NETWORK_SETTINGS or android.Manifest.permission.NETWORK_SETUP_WIZARD"
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "removeNetworkSuggestions",
+        "permissionText": "Remove some or all of the network suggestions that were previously provided by the app.\n See WifiNetworkSuggestion for a detailed explanation of the parameters.\n See WifiNetworkSuggestion#equals(Object) for the equivalence evaluation used.\n\n \n Requires Manifest.permission.CHANGE_WIFI_STATE"
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "removePasspointConfiguration",
+        "permissionText": "Remove the Passpoint configuration identified by its FQDN (Fully Qualified Domain Name).\n\n \n Requires android.Manifest.permission.NETWORK_SETTINGS"
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "setWifiEnabled",
+        "permissionText": "Applications must have the Manifest.permission.CHANGE_WIFI_STATE\n permission to toggle wifi."
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "startLocalOnlyHotspot",
+        "permissionText": "Applications need to have the following permissions to start LocalOnlyHotspot: Manifest.permission.CHANGE_WIFI_STATE and ACCESS_FINE_LOCATION.  Callers without\n the permissions will trigger a SecurityException."
+    },
+    {
+        "class": "android.net.wifi.WifiManager",
+        "api": "startScan",
+        "permissionText": "To initiate a Wi-Fi scan, declare the\n Manifest.permission.CHANGE_WIFI_STATE\n permission in the manifest, and perform these steps:"
+    },
+    {
+        "class": "android.net.wifi.aware.WifiAwareSession",
+        "api": "publish",
+        "permissionText": "The application must have the Manifest.permission.ACCESS_FINE_LOCATION\n permission to start a publish discovery session."
+    },
+    {
+        "class": "android.net.wifi.aware.WifiAwareSession",
+        "api": "subscribe",
+        "permissionText": "The application must have the Manifest.permission.ACCESS_FINE_LOCATION\n permission to start a subscribe discovery session."
+    },
+    {
+        "class": "android.net.wifi.aware.WifiAwareManager",
+        "api": "attach",
+        "permissionText": "This version of the API attaches a listener to receive the MAC address of the Aware interface\n on startup and whenever it is updated (it is randomized at regular intervals for privacy).\n The application must have the Manifest.permission.ACCESS_FINE_LOCATION\n permission to execute this attach request. Otherwise, use the\n attach(android.net.wifi.aware.AttachCallback, android.os.Handler) version. Note that aside from permission\n requirements this listener will wake up the host at regular intervals causing higher power\n consumption, do not use it unless the information is necessary (e.g. for OOB discovery)."
+    },
+    {
+        "class": "android.webkit.WebSettings",
+        "api": "setBlockNetworkLoads",
+        "permissionText": "Sets whether the WebView should not load resources from the network.\n Use setBlockNetworkImage(boolean) to only avoid loading\n image resources. Note that if the value of this setting is\n changed from true to false, network resources referenced by content\n currently displayed by the WebView are not fetched until\n WebView.reload() is called.\n If the application does not have the\n Manifest.permission.INTERNET permission, attempts to set\n a value of false will cause a SecurityException\n to be thrown. The default value is false if the application has the\n Manifest.permission.INTERNET permission, otherwise it is\n true."
+    },
+    {
+        "class": "android.webkit.WebSettings",
+        "api": "setGeolocationEnabled",
+        "permissionText": "an application must have permission to access the device location,\n   see Manifest.permission.ACCESS_COARSE_LOCATION,\n   Manifest.permission.ACCESS_FINE_LOCATION;\n   an application must provide an implementation of the\n   WebChromeClient#onGeolocationPermissionsShowPrompt callback\n   to receive notifications that a page is requesting access to location\n   via the JavaScript Geolocation API."
+    },
+    {
+        "class": "android.service.wallpaper.WallpaperService",
+        "api": "SERVICE_INTERFACE",
+        "permissionText": "The Intent that must be declared as handled by the service.\n To be supported, the service must also require the\n Manifest.permission.BIND_WALLPAPER permission so\n that other applications can not abuse it."
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "clear",
+        "permissionText": "Remove one or more currently set wallpapers, reverting to the system default\n display for each one.  If FLAG_SYSTEM is set in the which\n parameter, the intent Intent#ACTION_WALLPAPER_CHANGED will be broadcast\n upon success.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "clear",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "clearWallpaper",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER.\n \n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "getFastDrawable",
+        "permissionText": "Like getDrawable(), but the returned Drawable has a number\n of limitations to reduce its overhead as much as possible. It will\n never scale the wallpaper (only centering it if the requested bounds\n do match the bitmap bounds, which should not be typical), doesn't\n allow setting an alpha, color filter, or other attributes, etc.  The\n bounds of the returned drawable will be initialized to the same bounds\n as the wallpaper, so normally you will not need to touch it.  The\n drawable also assumes that it will be used in a context running in\n the same density as the screen (not in density compatibility mode).\n\n \n Requires Manifest.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "getWallpaperFile",
+        "permissionText": "If no lock-specific wallpaper has been configured for the given user, then\n this method will return null when requesting FLAG_LOCK rather than\n returning the system wallpaper's image file.\n\n \n Requires Manifest.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "peekFastDrawable",
+        "permissionText": "Like getFastDrawable(), but if there is no wallpaper set,\n a null pointer is returned.\n\n \n Requires Manifest.permission.READ_EXTERNAL_STORAGE"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "setBitmap",
+        "permissionText": "Version of setBitmap(android.graphics.Bitmap, android.graphics.Rect, boolean) that allows the caller\n to specify which of the supported wallpaper categories to set.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "setBitmap",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "setBitmap",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "setDisplayPadding",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER_HINTS.\n\n \n Requires Manifest.permission.SET_WALLPAPER_HINTS"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "setResource",
+        "permissionText": "Version of setResource(int) that allows the caller to specify which\n of the supported wallpaper categories to set.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "setResource",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "setStream",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "setStream",
+        "permissionText": "Version of setStream(java.io.InputStream, android.graphics.Rect, boolean) that allows the caller\n to specify which of the supported wallpaper categories to set.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "setStream",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER.\n\n \n Requires Manifest.permission.SET_WALLPAPER"
+    },
+    {
+        "class": "android.app.WallpaperManager",
+        "api": "suggestDesiredDimensions",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER_HINTS."
+    },
+    {
+        "class": "android.net.VpnService",
+        "api": "SERVICE_INTERFACE",
+        "permissionText": "The action must be matched by the intent filter of this service. It also\n needs to require Manifest.permission.BIND_VPN_SERVICE\n permission so that other applications cannot abuse it."
+    },
+    {
+        "class": "android.service.voice.VoiceInteractionService",
+        "api": "SERVICE_INTERFACE",
+        "permissionText": "The Intent that must be declared as handled by the service.\n To be supported, the service must also require the\n Manifest.permission.BIND_VOICE_INTERACTION permission so\n that other applications can not abuse it."
+    },
+    {
+        "class": "android.os.Vibrator",
+        "api": "cancel",
+        "permissionText": "Turn the vibrator off.\n \n \n Requires Manifest.permission.VIBRATE"
+    },
+    {
+        "class": "android.os.Vibrator",
+        "api": "vibrate",
+        "permissionText": "Vibrate constantly for the specified period of time.\n\n \n Requires Manifest.permission.VIBRATE"
+    },
+    {
+        "class": "android.os.Vibrator",
+        "api": "vibrate",
+        "permissionText": "Requires Manifest.permission.VIBRATE"
+    },
+    {
+        "class": "android.os.Vibrator",
+        "api": "vibrate",
+        "permissionText": "Manifest.permission.VIBRATE"
+    },
+    {
+        "class": "android.os.Vibrator",
+        "api": "vibrate",
+        "permissionText": "Manifest.permission.VIBRATE"
+    },
+    {
+        "class": "android.os.Vibrator",
+        "api": "vibrate",
+        "permissionText": "Requires Manifest.permission.VIBRATE"
+    },
+    {
+        "class": "android.os.Vibrator",
+        "api": "vibrate",
+        "permissionText": "Vibrate constantly for the specified period of time.\n\n \n Requires Manifest.permission.VIBRATE"
+    },
+    {
+        "class": "android.hardware.usb.UsbManager",
+        "api": "hasPermission",
+        "permissionText": "Returns true if the caller has permission to access the device.\n Permission might have been granted temporarily via\n requestPermission(android.hardware.usb.UsbDevice, android.app.PendingIntent) or\n by the user choosing the caller as the default application for the device.\n Permission for USB devices of class UsbConstants#USB_CLASS_VIDEO for clients that\n target SDK Build.VERSION_CODES.P and above can be granted only if they\n have additionally the Manifest.permission.CAMERA permission.\n\n \n Requires the PackageManager#FEATURE_USB_HOST feature which can be detected using PackageManager.hasSystemFeature(String)."
+    },
+    {
+        "class": "android.hardware.usb.UsbManager",
+        "api": "requestPermission",
+        "permissionText": "Manifest.permission.CAMERA"
+    },
+    {
+        "class": "android.app.usage.UsageStatsManager",
+        "api": "queryAndAggregateUsageStats",
+        "permissionText": "The caller must have Manifest.permission.PACKAGE_USAGE_STATS"
+    },
+    {
+        "class": "android.app.usage.UsageStatsManager",
+        "api": "queryConfigurations",
+        "permissionText": "The caller must have Manifest.permission.PACKAGE_USAGE_STATS"
+    },
+    {
+        "class": "android.app.usage.UsageStatsManager",
+        "api": "queryEventStats",
+        "permissionText": "The caller must have Manifest.permission.PACKAGE_USAGE_STATS"
+    },
+    {
+        "class": "android.app.usage.UsageStatsManager",
+        "api": "queryEvents",
+        "permissionText": "The caller must have Manifest.permission.PACKAGE_USAGE_STATS"
+    },
+    {
+        "class": "android.app.usage.UsageStatsManager",
+        "api": "queryUsageStats",
+        "permissionText": "The caller must have Manifest.permission.PACKAGE_USAGE_STATS"
+    },
+    {
+        "class": "android.media.tv.TvInputService",
+        "api": "SERVICE_INTERFACE",
+        "permissionText": "This is the interface name that a service implementing a TV input should say that it support\n -- that is, this is the action it uses for its intent filter. To be supported, the service\n must also require the Manifest.permission.BIND_TV_INPUT permission so that\n other applications cannot abuse it."
+    }
+]

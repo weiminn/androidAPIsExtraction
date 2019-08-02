@@ -1,0 +1,432 @@
+[
+    {
+        "class": "android.os.PowerManager",
+        "api": "newWakeLock",
+        "permissionText": "Although a wake lock can be created without special permissions,\n the Manifest.permission.WAKE_LOCK permission is\n required to actually acquire or release the wake lock that is returned."
+    },
+    {
+        "class": "android.os.PowerManager",
+        "api": "reboot",
+        "permissionText": "Requires the Manifest.permission.REBOOT permission."
+    },
+    {
+        "class": "android.telephony.PhoneStateListener",
+        "api": "LISTEN_EMERGENCY_NUMBER_LIST",
+        "permissionText": "Requires permission Manifest.permission.READ_PHONE_STATE or the calling\n app has carrier privileges (see TelephonyManager#hasCarrierPrivileges)."
+    },
+    {
+        "class": "android.content.pm.PackageManager",
+        "api": "canRequestPackageInstalls",
+        "permissionText": "Checks whether the calling package is allowed to request package installs through package\n installer. Apps are encouraged to call this API before launching the package installer via\n intent Intent.ACTION_INSTALL_PACKAGE. Starting from Android O, the\n user can explicitly choose what external sources they trust to install apps on the device.\n If this API returns false, the install request will be blocked by the package installer and\n a dialog will be shown to the user with au option to launch settings to change their\n preference. An application must target Android O or higher and declare permission\n Manifest.permission.REQUEST_INSTALL_PACKAGES in order to use this API."
+    },
+    {
+        "class": "android.content.pm.PackageInstaller",
+        "api": "installExistingPackage",
+        "permissionText": "This will\n PackageInstaller.SessionParams#setWhitelistedRestrictedPermissions(Set).\n\n \n Requires Manifest.permission.INSTALL_PACKAGES and android.Manifest.permission.INSTALL_EXISTING_PACKAGES"
+    },
+    {
+        "class": "android.content.pm.PackageInstaller",
+        "api": "uninstall",
+        "permissionText": "Manifest.permission.DELETE_PACKAGES"
+    },
+    {
+        "class": "android.content.pm.PackageInstaller",
+        "api": "uninstall",
+        "permissionText": "Manifest.permission.DELETE_PACKAGES"
+    },
+    {
+        "class": "android.app.Notification.Builder",
+        "api": "setFullScreenIntent",
+        "permissionText": "Apps targeting Build.VERSION_CODES#Q and above will have to request\n a permission (Manifest.permission.USE_FULL_SCREEN_INTENT) in order to\n use full screen intents."
+    },
+    {
+        "class": "android.nfc.tech.NfcV",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcV",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcV",
+        "api": "transceive",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcF",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcF",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcF",
+        "api": "getTimeout",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcF",
+        "api": "setTimeout",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcF",
+        "api": "transceive",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcBarcode",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcBarcode",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcB",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcB",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcB",
+        "api": "transceive",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "ACTION_TRANSACTION_DETECTED",
+        "permissionText": "This intent will only be sent if the application has requested permission for\n Manifest.permission.NFC_TRANSACTION_EVENT and if the application has the\n necessary access to Secure Element which witnessed the particular event.\n \n \n Requires Manifest.permission.NFC_TRANSACTION_EVENT"
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "disableForegroundDispatch",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "disableForegroundNdefPush",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "enableForegroundDispatch",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "enableForegroundNdefPush",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "setBeamPushUris",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "setBeamPushUrisCallback",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "setNdefPushMessage",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "setNdefPushMessageCallback",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.NfcAdapter",
+        "api": "setOnNdefPushCompleteCallback",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcA",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcA",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcA",
+        "api": "getTimeout",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcA",
+        "api": "setTimeout",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NfcA",
+        "api": "transceive",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NdefFormatable",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NdefFormatable",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NdefFormatable",
+        "api": "format",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.NdefFormatable",
+        "api": "formatReadOnly",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.Ndef",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.Ndef",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.Ndef",
+        "api": "getNdefMessage",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.Ndef",
+        "api": "isWritable",
+        "permissionText": "Requires Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.Ndef",
+        "api": "makeReadOnly",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.Ndef",
+        "api": "writeNdefMessage",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.test.mock.MockPackageManager",
+        "api": "canRequestPackageInstalls",
+        "permissionText": "Checks whether the calling package is allowed to request package installs through package\n installer. Apps are encouraged to call this API before launching the package installer via\n intent Intent.ACTION_INSTALL_PACKAGE. Starting from Android O, the\n user can explicitly choose what external sources they trust to install apps on the device.\n If this API returns false, the install request will be blocked by the package installer and\n a dialog will be shown to the user with an option to launch settings to change their\n preference. An application must target Android O or higher and declare permission\n Manifest.permission.REQUEST_INSTALL_PACKAGES in order to use this API."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "clearWallpaper",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "getExternalCacheDir",
+        "permissionText": "The platform does not always monitor the space available in shared\n storage, and thus may not automatically delete these files. Apps should\n always manage the maximum space used in this location. Currently the only\n time files here will be deleted by the platform is when running on\n Build.VERSION_CODES.JELLY_BEAN_MR1 or later and\n Environment#isExternalStorageEmulated(File) returns true.\n Shared storage may not always be available, since removable media can\n be ejected by the user. Media state can be checked using\n Environment#getExternalStorageState(File).\n There is no security enforced with these files. For example, any\n application holding\n Manifest.permission.WRITE_EXTERNAL_STORAGE can write to\n these files."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "getExternalCacheDirs",
+        "permissionText": "The platform does not always monitor the space available in shared\n storage, and thus may not automatically delete these files. Apps should\n always manage the maximum space used in this location. Currently the only\n time files here will be deleted by the platform is when running on\n Build.VERSION_CODES.JELLY_BEAN_MR1 or later and\n Environment#isExternalStorageEmulated(File) returns true.\n Shared storage may not always be available, since removable media can\n be ejected by the user. Media state can be checked using\n Environment#getExternalStorageState(File).\n There is no security enforced with these files. For example, any\n application holding\n Manifest.permission.WRITE_EXTERNAL_STORAGE can write to\n these files."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "getExternalFilesDir",
+        "permissionText": "Shared storage may not always be available, since removable media can\n be ejected by the user. Media state can be checked using\n Environment#getExternalStorageState(File).\n There is no security enforced with these files. For example, any\n application holding\n Manifest.permission.WRITE_EXTERNAL_STORAGE can write to\n these files."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "getExternalFilesDirs",
+        "permissionText": "Shared storage may not always be available, since removable media can\n be ejected by the user. Media state can be checked using\n Environment#getExternalStorageState(File).\n There is no security enforced with these files. For example, any\n application holding\n Manifest.permission.WRITE_EXTERNAL_STORAGE can write to\n these files."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "getExternalMediaDirs",
+        "permissionText": "Shared storage may not always be available, since removable media can\n be ejected by the user. Media state can be checked using\n Environment#getExternalStorageState(File).\n There is no security enforced with these files. For example, any\n application holding\n Manifest.permission.WRITE_EXTERNAL_STORAGE can write to\n these files."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "getObbDir",
+        "permissionText": "Shared storage may not always be available, since removable media can\n be ejected by the user. Media state can be checked using\n Environment#getExternalStorageState(File).\n There is no security enforced with these files. For example, any\n application holding\n Manifest.permission.WRITE_EXTERNAL_STORAGE can write to\n these files."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "getObbDirs",
+        "permissionText": "Shared storage may not always be available, since removable media can\n be ejected by the user. Media state can be checked using\n Environment#getExternalStorageState(File).\n There is no security enforced with these files. For example, any\n application holding\n Manifest.permission.WRITE_EXTERNAL_STORAGE can write to\n these files."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "removeStickyBroadcast",
+        "permissionText": "Remove the data previously sent with sendStickyBroadcast(Intent),\n so that it is as if the sticky broadcast had never happened.\n\n \n Requires Manifest.permission.BROADCAST_STICKY"
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "removeStickyBroadcastAsUser",
+        "permissionText": "You must hold the Manifest.permission.BROADCAST_STICKY\n permission in order to use this API.  If you do not hold that\n permission, SecurityException will be thrown.\n\n \n Requires android.Manifest.permission.INTERACT_ACROSS_USERS and Manifest.permission.BROADCAST_STICKY"
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "sendBroadcastAsUser",
+        "permissionText": "Version of sendBroadcast(android.content.Intent) that allows you to specify the\n user the broadcast will be sent to.  This is not available to applications\n that are not pre-installed on the system image.\n \n Requires android.Manifest.permission.INTERACT_ACROSS_USERS"
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "sendBroadcastAsUser",
+        "permissionText": "Version of sendBroadcast(android.content.Intent, java.lang.String) that allows you to specify the\n user the broadcast will be sent to.  This is not available to applications\n that are not pre-installed on the system image.\n\n \n Requires android.Manifest.permission.INTERACT_ACROSS_USERS"
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "sendOrderedBroadcastAsUser",
+        "permissionText": "See BroadcastReceiver for more information on Intent broadcasts.\n\n \n Requires android.Manifest.permission.INTERACT_ACROSS_USERS"
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "sendStickyBroadcast",
+        "permissionText": "Perform a sendBroadcast(android.content.Intent) that is \"sticky,\" meaning the\n Intent you are sending stays around after the broadcast is complete,\n so that others can quickly retrieve that data through the return\n value of registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter).  In\n all other ways, this behaves the same as\n sendBroadcast(android.content.Intent).\n\n \n Requires Manifest.permission.BROADCAST_STICKY"
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "sendStickyBroadcastAsUser",
+        "permissionText": "Version of sendStickyBroadcast(android.content.Intent) that allows you to specify the\n user the broadcast will be sent to.  This is not available to applications\n that are not pre-installed on the system image.\n\n \n Requires android.Manifest.permission.INTERACT_ACROSS_USERS and Manifest.permission.BROADCAST_STICKY"
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "sendStickyOrderedBroadcast",
+        "permissionText": "See BroadcastReceiver for more information on Intent broadcasts.\n\n \n Requires Manifest.permission.BROADCAST_STICKY"
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "sendStickyOrderedBroadcastAsUser",
+        "permissionText": "See BroadcastReceiver for more information on Intent broadcasts.\n\n \n Requires android.Manifest.permission.INTERACT_ACROSS_USERS and Manifest.permission.BROADCAST_STICKY"
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "setWallpaper",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER."
+    },
+    {
+        "class": "android.test.mock.MockContext",
+        "api": "setWallpaper",
+        "permissionText": "This method requires the caller to hold the permission\n Manifest.permission.SET_WALLPAPER."
+    },
+    {
+        "class": "android.nfc.tech.MifareUltralight",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareUltralight",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareUltralight",
+        "api": "getTimeout",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareUltralight",
+        "api": "readPages",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareUltralight",
+        "api": "setTimeout",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareUltralight",
+        "api": "transceive",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareUltralight",
+        "api": "writePage",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "authenticateSectorWithKeyA",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "authenticateSectorWithKeyB",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "decrement",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "getTimeout",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "increment",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "readBlock",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "restore",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "setTimeout",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "transceive",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "transfer",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.MifareClassic",
+        "api": "writeBlock",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    }
+]

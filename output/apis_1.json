@@ -1,0 +1,852 @@
+[
+    {
+        "class": "android.bluetooth.BluetoothProfile",
+        "api": "getConnectedDevices",
+        "permissionText": "Return the set of devices which are in state STATE_CONNECTED\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothProfile",
+        "api": "getConnectionState",
+        "permissionText": "Get the current connection state of the profile\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothProfile",
+        "api": "getDevicesMatchingConnectionStates",
+        "permissionText": "If none of the devices match any of the given states,\n an empty list will be returned.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothManager",
+        "api": "getConnectedDevices",
+        "permissionText": "This is not specific to any application configuration but represents\n the connection state of Bluetooth for this profile.\n This can be used by applications like status bar which would just like\n to know the state of Bluetooth.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothManager",
+        "api": "getConnectionState",
+        "permissionText": "This is not specific to any application configuration but represents\n the connection state of the local Bluetooth adapter for certain profile.\n This can be used by applications like status bar which would just like\n to know the state of Bluetooth.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothManager",
+        "api": "getDevicesMatchingConnectionStates",
+        "permissionText": "This is not specific to any application configuration but represents\n the connection state of the local Bluetooth adapter for this profile.\n This can be used by applications like status bar which would just like\n to know the state of the local adapter.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.le.BluetoothLeScanner",
+        "api": "startScan",
+        "permissionText": "When the PendingIntent is delivered, the Intent passed to the receiver or activity\n will contain one or more of the extras EXTRA_CALLBACK_TYPE,\n EXTRA_ERROR_CODE and EXTRA_LIST_SCAN_RESULT to indicate the result of\n the scan.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.le.BluetoothLeScanner",
+        "api": "startScan",
+        "permissionText": "An app must hold\n ACCESS_COARSE_LOCATION or\n ACCESS_FINE_LOCATION permission\n in order to get results.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.le.BluetoothLeScanner",
+        "api": "startScan",
+        "permissionText": "An app must hold\n ACCESS_COARSE_LOCATION or\n ACCESS_FINE_LOCATION permission\n in order to get results.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.le.BluetoothLeScanner",
+        "api": "stopScan",
+        "permissionText": "Stops an ongoing Bluetooth LE scan.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.le.BluetoothLeScanner",
+        "api": "stopScan",
+        "permissionText": "Stops an ongoing Bluetooth LE scan started using a PendingIntent. When creating the\n PendingIntent parameter, please do not use the FLAG_CANCEL_CURRENT flag. Otherwise, the stop\n scan may have no effect.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.le.BluetoothLeAdvertiser",
+        "api": "startAdvertising",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH_ADMIN permission."
+    },
+    {
+        "class": "android.bluetooth.le.BluetoothLeAdvertiser",
+        "api": "startAdvertising",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.le.BluetoothLeAdvertiser",
+        "api": "stopAdvertising",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH_ADMIN permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHidDevice",
+        "api": "ACTION_CONNECTION_STATE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHidDevice",
+        "api": "getConnectedDevices",
+        "permissionText": "Return the set of devices which are in state STATE_CONNECTED\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothHidDevice",
+        "api": "getConnectionState",
+        "permissionText": "Get the current connection state of the profile\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothHidDevice",
+        "api": "getDevicesMatchingConnectionStates",
+        "permissionText": "If none of the devices match any of the given states,\n an empty list will be returned.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothHearingAid",
+        "api": "ACTION_CONNECTION_STATE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission to\n receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHearingAid",
+        "api": "getConnectedDevices",
+        "permissionText": "Return the set of devices which are in state STATE_CONNECTED\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothHearingAid",
+        "api": "getConnectionState",
+        "permissionText": "Get the current connection state of the profile\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothHearingAid",
+        "api": "getDevicesMatchingConnectionStates",
+        "permissionText": "If none of the devices match any of the given states,\n an empty list will be returned.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothHealth",
+        "api": "connectChannelToSource",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHealth",
+        "api": "disconnectChannel",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHealth",
+        "api": "getConnectedDevices",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission.\n\n This is not specific to any application configuration but represents the connection\n state of the local Bluetooth adapter for this profile. This can be used\n by applications like status bar which would just like to know the state of the\n local adapter."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHealth",
+        "api": "getConnectionState",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission.\n\n This is not specific to any application configuration but represents the connection\n state of the local Bluetooth adapter with the remote device. This can be used\n by applications like status bar which would just like to know the state of the\n local adapter."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHealth",
+        "api": "getDevicesMatchingConnectionStates",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission.\n This is not specific to any application configuration but represents the connection\n state of the local Bluetooth adapter for this profile. This can be used\n by applications like status bar which would just like to know the state of the\n local adapter."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHealth",
+        "api": "getMainChannelFd",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHealth",
+        "api": "registerSinkAppConfiguration",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHealth",
+        "api": "unregisterAppConfiguration",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "ACTION_AUDIO_STATE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission\n to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "ACTION_CONNECTION_STATE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission to\n receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "ACTION_VENDOR_SPECIFIC_HEADSET_EVENT",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission\n to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "getConnectedDevices",
+        "permissionText": "Return the set of devices which are in state STATE_CONNECTED\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "getConnectionState",
+        "permissionText": "Get the current connection state of the profile\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "getDevicesMatchingConnectionStates",
+        "permissionText": "If none of the devices match any of the given states,\n an empty list will be returned.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "isAudioConnected",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "sendVendorSpecificResultCode",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "startVoiceRecognition",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothHeadset",
+        "api": "stopVoiceRecognition",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattService",
+        "api": "BluetoothGattService",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattService",
+        "api": "addCharacteristic",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattService",
+        "api": "addService",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattServer",
+        "api": "addService",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattServer",
+        "api": "cancelConnection",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattServer",
+        "api": "clearServices",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattServer",
+        "api": "connect",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattServer",
+        "api": "getService",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattServer",
+        "api": "getServices",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattServer",
+        "api": "notifyCharacteristicChanged",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattServer",
+        "api": "removeService",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattServer",
+        "api": "sendResponse",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattDescriptor",
+        "api": "BluetoothGattDescriptor",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattCharacteristic",
+        "api": "BluetoothGattCharacteristic",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGattCharacteristic",
+        "api": "addDescriptor",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "abortReliableWrite",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "beginReliableWrite",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "disconnect",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "discoverServices",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "executeReliableWrite",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "getService",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "getServices",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "readCharacteristic",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "readDescriptor",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "readRemoteRssi",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "requestMtu",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "setCharacteristicNotification",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "writeCharacteristic",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothGatt",
+        "api": "writeDescriptor",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "ACTION_ACL_CONNECTED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "ACTION_ACL_DISCONNECTED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "ACTION_ACL_DISCONNECT_REQUESTED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "ACTION_BOND_STATE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "ACTION_CLASS_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "ACTION_FOUND",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH and\n Manifest.permission.ACCESS_COARSE_LOCATION to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "ACTION_NAME_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "ACTION_PAIRING_REQUEST",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH_ADMIN to\n receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "ACTION_UUID",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH_ADMIN to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "createBond",
+        "permissionText": "Android system services will handle the necessary user interactions\n to confirm and complete the bonding process.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "createInsecureL2capChannel",
+        "permissionText": "The communication channel may not have an authenticated link key, i.e. it may be subject\n to man-in-the-middle attacks. Use createL2capChannel(int) if an encrypted and\n authenticated communication channel is possible.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "createInsecureRfcommSocketToServiceRecord",
+        "permissionText": "Hint: If you are connecting to a Bluetooth serial board then try\n using the well-known SPP UUID 00001101-0000-1000-8000-00805F9B34FB.\n However if you are connecting to an Android peer then please generate\n your own unique UUID.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "createL2capChannel",
+        "permissionText": "Use this socket if an authenticated socket link is possible. Authentication refers\n to the authentication of the link key to prevent man-in-the-middle type of attacks.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "createRfcommSocketToServiceRecord",
+        "permissionText": "Hint: If you are connecting to a Bluetooth serial board then try\n using the well-known SPP UUID 00001101-0000-1000-8000-00805F9B34FB.\n However if you are connecting to an Android peer then please generate\n your own unique UUID.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "fetchUuidsWithSdp",
+        "permissionText": "This API is asynchronous and ACTION_UUID intent is sent,\n with the UUIDs supported by the remote end. If there is an error\n in getting the SDP records or if the process takes a long time,\n ACTION_UUID intent is sent with the UUIDs that is currently\n present in the cache. Clients should use the getUuids() to get UUIDs\n if service discovery is not to be performed.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "getBluetoothClass",
+        "permissionText": "Get the Bluetooth class of the remote device.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "getBondState",
+        "permissionText": "Possible values for the bond state are:\n BOND_NONE,\n BOND_BONDING,\n BOND_BONDED.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "getName",
+        "permissionText": "The local adapter will automatically retrieve remote names when\n performing a device scan, and will cache them. This method just returns\n the name for this device from the cache.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "getType",
+        "permissionText": "Get the Bluetooth device type of the remote device.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "getUuids",
+        "permissionText": "Use fetchUuidsWithSdp() if fresh UUIDs are desired.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "setPairingConfirmation",
+        "permissionText": "Confirm passkey for PAIRING_VARIANT_PASSKEY_CONFIRMATION pairing.\n\n \n Requires Manifest.permission.BLUETOOTH_PRIVILEGED"
+    },
+    {
+        "class": "android.bluetooth.BluetoothDevice",
+        "api": "setPin",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH_ADMIN."
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "ACTION_CONNECTION_STATE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "ACTION_DISCOVERY_FINISHED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "ACTION_DISCOVERY_STARTED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "ACTION_LOCAL_NAME_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "ACTION_REQUEST_DISCOVERABLE",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "ACTION_REQUEST_ENABLE",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "ACTION_SCAN_MODE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "ACTION_STATE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH to receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "cancelDiscovery",
+        "permissionText": "If Bluetooth state is not STATE_ON, this API\n will return false. After turning on Bluetooth,\n wait for ACTION_STATE_CHANGED with STATE_ON\n to get the updated value.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "disable",
+        "permissionText": "This is an asynchronous call: it will return immediately, and\n clients should listen for ACTION_STATE_CHANGED\n to be notified of subsequent adapter state changes. If this call returns\n true, then the adapter state will immediately transition from STATE_ON to STATE_TURNING_OFF, and some time\n later transition to either STATE_OFF or STATE_ON. If this call returns false then there was an\n immediate problem that will prevent the adapter from being turned off -\n such as the adapter already being turned off.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "enable",
+        "permissionText": "This is an asynchronous call: it will return immediately, and\n clients should listen for ACTION_STATE_CHANGED\n to be notified of subsequent adapter state changes. If this call returns\n true, then the adapter state will immediately transition from STATE_OFF to STATE_TURNING_ON, and some time\n later transition to either STATE_OFF or STATE_ON. If this call returns false then there was an\n immediate problem that will prevent the adapter from being turned on -\n such as Airplane mode, or the adapter is already turned on.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "getAddress",
+        "permissionText": "For example, \"00:11:22:AA:BB:CC\".\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "getBondedDevices",
+        "permissionText": "If Bluetooth state is not STATE_ON, this API\n will return an empty set. After turning on Bluetooth,\n wait for ACTION_STATE_CHANGED with STATE_ON\n to get the updated value.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "getName",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "getProfileConnectionState",
+        "permissionText": "Return value can be one of\n BluetoothProfile#STATE_DISCONNECTED,\n BluetoothProfile#STATE_CONNECTING,\n BluetoothProfile#STATE_CONNECTED,\n BluetoothProfile#STATE_DISCONNECTING\n \n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "getScanMode",
+        "permissionText": "If Bluetooth state is not STATE_ON, this API\n will return SCAN_MODE_NONE. After turning on Bluetooth,\n wait for ACTION_STATE_CHANGED with STATE_ON\n to get the updated value.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "getState",
+        "permissionText": "Possible return values are\n STATE_OFF,\n STATE_TURNING_ON,\n STATE_ON,\n STATE_TURNING_OFF.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "isDiscovering",
+        "permissionText": "If Bluetooth state is not STATE_ON, this API\n will return false. After turning on Bluetooth,\n wait for ACTION_STATE_CHANGED with STATE_ON\n to get the updated value.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "isEnabled",
+        "permissionText": "Equivalent to:\n getBluetoothState() == STATE_ON\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "listenUsingInsecureL2capChannel",
+        "permissionText": "Use BluetoothDevice#createInsecureL2capChannel(int) to connect to this server\n socket from another Android device that is given the PSM value.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "listenUsingInsecureRfcommWithServiceRecord",
+        "permissionText": "Use BluetoothDevice#createRfcommSocketToServiceRecord to\n connect to this socket from another device using the same UUID.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "listenUsingL2capChannel",
+        "permissionText": "Use BluetoothDevice#createL2capChannel(int) to connect to this server\n socket from another Android device that is given the PSM value.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "listenUsingRfcommWithServiceRecord",
+        "permissionText": "Use BluetoothDevice#createRfcommSocketToServiceRecord to\n connect to this socket from another device using the same UUID.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "setName",
+        "permissionText": "If Bluetooth state is not STATE_ON, this API\n will return false. After turning on Bluetooth,\n wait for ACTION_STATE_CHANGED with STATE_ON\n to get the updated value.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "startDiscovery",
+        "permissionText": "If Bluetooth state is not STATE_ON, this API\n will return false. After turning on Bluetooth,\n wait for ACTION_STATE_CHANGED with STATE_ON\n to get the updated value.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "startLeScan",
+        "permissionText": "Devices which advertise all specified services are reported using the\n LeScanCallback#onLeScan callback.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "startLeScan",
+        "permissionText": "Results of the scan are reported using the\n LeScanCallback#onLeScan callback.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.BluetoothAdapter",
+        "api": "stopLeScan",
+        "permissionText": "Stops an ongoing Bluetooth LE device scan.\n\n \n Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.bluetooth.BluetoothA2dp",
+        "api": "ACTION_CONNECTION_STATE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission to\n receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothA2dp",
+        "api": "ACTION_PLAYING_STATE_CHANGED",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission to\n receive."
+    },
+    {
+        "class": "android.bluetooth.BluetoothA2dp",
+        "api": "getConnectedDevices",
+        "permissionText": "Return the set of devices which are in state STATE_CONNECTED\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothA2dp",
+        "api": "getConnectionState",
+        "permissionText": "Get the current connection state of the profile\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothA2dp",
+        "api": "getDevicesMatchingConnectionStates",
+        "permissionText": "If none of the devices match any of the given states,\n an empty list will be returned.\n\n \n Requires Manifest.permission.BLUETOOTH"
+    },
+    {
+        "class": "android.bluetooth.BluetoothA2dp",
+        "api": "isA2dpPlaying",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH permission."
+    },
+    {
+        "class": "android.hardware.biometrics.BiometricPrompt",
+        "api": "authenticate",
+        "permissionText": "This call warms up the biometric hardware, displays a system-provided dialog, and starts\n scanning for a biometric. It terminates when AuthenticationCallback#onAuthenticationError(int, CharSequence) is called, when AuthenticationCallback#onAuthenticationSucceeded( AuthenticationResult) is called, or when\n the user dismisses the system-provided dialog.  This operation can be canceled by using the\n provided cancel object. The application will receive authentication errors through AuthenticationCallback, and button events through the corresponding callback set in Builder#setNegativeButton(CharSequence, Executor, DialogInterface.OnClickListener).  It is\n safe to reuse the BiometricPrompt object, and calling BiometricPrompt#authenticate(CancellationSignal, Executor, AuthenticationCallback) while\n an existing authentication attempt is occurring will stop the previous client and start a new\n authentication. The interrupted client will receive a cancelled notification through AuthenticationCallback#onAuthenticationError(int, CharSequence).\n\n Note: Applications generally should not cancel and start authentication in quick succession.\n For example, to properly handle authentication across configuration changes, it's recommended\n to use BiometricPrompt in a fragment with setRetainInstance(true). By doing so, the\n application will not need to cancel/restart authentication during the configuration change.\n\n \n Requires Manifest.permission.USE_BIOMETRIC"
+    },
+    {
+        "class": "android.hardware.biometrics.BiometricPrompt",
+        "api": "authenticate",
+        "permissionText": "This call warms up the biometric hardware, displays a system-provided dialog, and starts\n scanning for a biometric. It terminates when AuthenticationCallback#onAuthenticationError(int, CharSequence) is called, when AuthenticationCallback#onAuthenticationSucceeded( AuthenticationResult), or when the user\n dismisses the system-provided dialog, at which point the crypto object becomes invalid. This\n operation can be canceled by using the provided cancel object. The application will receive\n authentication errors through AuthenticationCallback, and button events through the\n corresponding callback set in Builder#setNegativeButton(CharSequence, Executor,\n DialogInterface.OnClickListener). It is safe to reuse the BiometricPrompt object,\n and calling BiometricPrompt#authenticate( CancellationSignal, Executor,\n AuthenticationCallback) while an existing authentication attempt is occurring will stop the\n previous client and start a new authentication. The interrupted client will receive a\n cancelled notification through AuthenticationCallback#onAuthenticationError(int,\n CharSequence).\n\n Note: Applications generally should not cancel and start authentication in quick succession.\n For example, to properly handle authentication across configuration changes, it's recommended\n to use BiometricPrompt in a fragment with setRetainInstance(true). By doing so, the\n application will not need to cancel/restart authentication during the configuration change.\n\n \n Requires Manifest.permission.USE_BIOMETRIC"
+    },
+    {
+        "class": "android.hardware.biometrics.BiometricManager",
+        "api": "canAuthenticate",
+        "permissionText": "Determine if biometrics can be used. In other words, determine if BiometricPrompt\n can be expected to be shown (hardware available, templates enrolled, user-enabled).\n\n \n Requires Manifest.permission.USE_BIOMETRIC"
+    },
+    {
+        "class": "android.service.autofill.AutofillService",
+        "api": "SERVICE_INTERFACE",
+        "permissionText": "The Intent that must be declared as handled by the service.\n To be supported, the service must also require the\n Manifest.permission.BIND_AUTOFILL_SERVICE permission so\n that other applications can not abuse it."
+    },
+    {
+        "class": "android.media.AudioManager",
+        "api": "startBluetoothSco",
+        "permissionText": "Requires Permission:\n   Manifest.permission.MODIFY_AUDIO_SETTINGS."
+    },
+    {
+        "class": "android.media.AudioManager",
+        "api": "stopBluetoothSco",
+        "permissionText": "Requires Permission:\n   Manifest.permission.MODIFY_AUDIO_SETTINGS."
+    },
+    {
+        "class": "android.appwidget.AppWidgetManager",
+        "api": "bindAppWidgetIdIfAllowed",
+        "permissionText": "Note: You need the Manifest.permission.BIND_APPWIDGET\n permission or the user must have enabled binding widgets always for your component.\n Should be used by apps that host widgets. If this method returns false, call ACTION_APPWIDGET_BIND to request permission to bind."
+    },
+    {
+        "class": "android.content.pm.ApplicationInfo",
+        "api": "FLAG_FACTORY_TEST",
+        "permissionText": "Value for flags: set to true if this application holds the\n Manifest.permission.FACTORY_TEST permission and the\n device is running in factory test mode."
+    },
+    {
+        "class": "android.app.AlarmManager",
+        "api": "setTime",
+        "permissionText": "Set the system wall clock time.\n Requires the permission android.permission.SET_TIME.\n\n \n Requires Manifest.permission.SET_TIME"
+    },
+    {
+        "class": "android.app.AlarmManager",
+        "api": "setTimeZone",
+        "permissionText": "On android M and above, it is an error to pass in a non-Olson timezone to this\n function. Note that this is a bad idea on all Android releases because POSIX and\n the TimeZone class have opposite interpretations of '+' and '-'\n in the same non-Olson ID.\n\n \n Requires Manifest.permission.SET_TIME_ZONE"
+    },
+    {
+        "class": "android.bluetooth.le.AdvertisingSet",
+        "api": "enableAdvertising",
+        "permissionText": "Requires Manifest.permission.BLUETOOTH_ADMIN"
+    },
+    {
+        "class": "android.app.ActivityManager",
+        "api": "dumpPackageState",
+        "permissionText": "Perform a system dump of various state associated with the given application\n package name.  This call blocks while the dump is being performed, so should\n not be done on a UI thread.  The data will be written to the given file\n descriptor as text.\n \n Requires Manifest.permission.DUMP"
+    },
+    {
+        "class": "android.app.ActivityManager",
+        "api": "killBackgroundProcesses",
+        "permissionText": "Have the system immediately kill all background processes associated\n with the given package.  This is the same as the kernel killing those\n processes to reclaim memory; the system will take care of restarting\n these processes in the future as needed.\n\n \n Requires Manifest.permission.KILL_BACKGROUND_PROCESSES"
+    },
+    {
+        "class": "android.app.ActivityManager",
+        "api": "moveTaskToFront",
+        "permissionText": "Ask that the task associated with a given task ID be moved to the\n front of the stack, so it is now visible to the user.\n\n \n Requires Manifest.permission.REORDER_TASKS"
+    },
+    {
+        "class": "android.app.ActivityManager",
+        "api": "moveTaskToFront",
+        "permissionText": "Equivalent to calling moveTaskToFront(int, int, android.os.Bundle)\n with a null options argument.\n\n \n Requires Manifest.permission.REORDER_TASKS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "PACKAGE_NAME_KEY_LEGACY_VISIBLE",
+        "permissionText": "Target API level below Build.VERSION_CODES.O and have\n deprecated Manifest.permission.GET_ACCOUNTS permission.\n \n  Have Manifest.permission.GET_ACCOUNTS_PRIVILEGED permission. \n  Have the same signature as authenticator. \n  Have Manifest.permission.READ_CONTACTS permission and\n account type may be associated with contacts data - (verified by\n Manifest.permission.WRITE_CONTACTS permission check for the authenticator)."
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "addAccount",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n MANAGE_ACCOUNTS permission is needed for those platforms. See docs for\n this function in API level 22.\n\n \n Requires android.Manifest.permission.MANAGE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "addAccountExplicitly",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n AUTHENTICATE_ACCOUNTS permission is needed for those platforms. See docs\n for this function in API level 22.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "addOnAccountsUpdatedListener",
+        "permissionText": "Adds an OnAccountsUpdateListener to this instance of the AccountManager. This\n listener will be notified whenever user or AbstractAcccountAuthenticator made changes to\n accounts of any type related to the caller. This method is equivalent to\n addOnAccountsUpdatedListener(listener, handler, updateImmediately, null)\n\n \n Requires Manifest.permission.GET_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "blockingGetAuthToken",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n USE_CREDENTIALS permission is needed for those platforms. See docs for\n this function in API level 22.\n\n \n Requires android.Manifest.permission.USE_CREDENTIALS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "clearPassword",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n MANAGE_ACCOUNTS permission is needed for those platforms. See docs for\n this function in API level 22.\n\n \n Requires android.Manifest.permission.MANAGE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "confirmCredentials",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n MANAGE_ACCOUNTS permission is needed for those platforms. See docs\n for this function in API level 22.\n\n \n Requires android.Manifest.permission.MANAGE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "editProperties",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n MANAGE_ACCOUNTS permission is needed for those platforms. See docs\n for this function in API level 22.\n\n \n Requires android.Manifest.permission.MANAGE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "getAccounts",
+        "permissionText": "It is safe to call this method from the main thread.\n\n \n Requires Manifest.permission.GET_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "getAccountsByType",
+        "permissionText": "Caller targeting API level Build.VERSION_CODES.O and above, will get list\n of accounts made visible to it by user\n (see newChooseAccountIntent(android.accounts.Account, java.util.List, java.lang.String[], java.lang.String, java.lang.String, java.lang.String[], android.os.Bundle)) or AbstractAcccountAuthenticator\n using setAccountVisibility(Account, String, int).\n Manifest.permission.GET_ACCOUNTS permission is not used."
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "getAccountsByTypeAndFeatures",
+        "permissionText": "Caller targeting API level Build.VERSION_CODES.O and above, will get list\n of accounts made visible to it by user\n (see newChooseAccountIntent(android.accounts.Account, java.util.List, java.lang.String[], java.lang.String, java.lang.String, java.lang.String[], android.os.Bundle)) or AbstractAcccountAuthenticator\n using setAccountVisibility(Account, String, int).\n Manifest.permission.GET_ACCOUNTS permission is not used."
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "getAuthToken",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n USE_CREDENTIALS permission is needed for those platforms. See docs for\n this function in API level 22.\n\n \n Requires android.Manifest.permission.USE_CREDENTIALS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "getAuthToken",
+        "permissionText": "This method may be called from any thread, but the returned\n AccountManagerFuture must not be used on the main thread.\n\n \n Requires android.Manifest.permission.USE_CREDENTIALS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "getAuthToken",
+        "permissionText": "This method may be called from any thread, but the returned\n AccountManagerFuture must not be used on the main thread.\n\n \n Requires android.Manifest.permission.USE_CREDENTIALS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "getAuthTokenByFeatures",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before, MANAGE_ACCOUNTS\n permission is needed for those platforms. See docs for this function in API level 22.\n\n \n Requires android.Manifest.permission.MANAGE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "getPassword",
+        "permissionText": "NOTE: If targeting your app to work on API level\n Build.VERSION_CODES.LOLLIPOP_MR1 and before, AUTHENTICATE_ACCOUNTS\n permission is needed for those platforms. See docs for this function in API level\n Build.VERSION_CODES.LOLLIPOP_MR1.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "getUserData",
+        "permissionText": "NOTE: If targeting your app to work on API level\n Build.VERSION_CODES.LOLLIPOP_MR1 and before, AUTHENTICATE_ACCOUNTS\n permission is needed for those platforms. See docs for this function in API level\n Build.VERSION_CODES.LOLLIPOP_MR1.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "hasFeatures",
+        "permissionText": "If caller target API level is below Build.VERSION_CODES.O, it is\n required to hold the permission Manifest.permission.GET_ACCOUNTS or have a\n signature match with the AbstractAccountAuthenticator that manages the account."
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "invalidateAuthToken",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n MANAGE_ACCOUNTS or USE_CREDENTIALS permission is needed for those\n platforms. See docs for this function in API level 22.\n\n \n Requires android.Manifest.permission.MANAGE_ACCOUNTS or android.Manifest.permission.USE_CREDENTIALS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "notifyAccountAuthenticated",
+        "permissionText": "This method requires the caller to have a signature match with the\n authenticator that owns the specified account.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "peekAuthToken",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n AUTHENTICATE_ACCOUNTS permission and same UID as account's authenticator\n is needed for those platforms. See docs for this function in API level 22.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "removeAccount",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n MANAGE_ACCOUNTS permission is needed for those platforms. See docs for\n this function in API level 22.\n\n \n Requires android.Manifest.permission.MANAGE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "removeAccount",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n MANAGE_ACCOUNTS permission is needed for those platforms. See docs for\n this function in API level 22.\n\n \n Requires android.Manifest.permission.MANAGE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "removeAccountExplicitly",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n AUTHENTICATE_ACCOUNTS permission and same UID as account's authenticator\n is needed for those platforms. See docs for this function in API level 22.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "renameAccount",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n AUTHENTICATE_ACCOUNTS permission and same UID as account's authenticator\n is needed for those platforms. See docs for this function in API level 22.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "setAuthToken",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n AUTHENTICATE_ACCOUNTS permission and same UID as account's authenticator\n is needed for those platforms. See docs for this function in API level 22.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "setPassword",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n AUTHENTICATE_ACCOUNTS permission and same UID as account's authenticator\n is needed for those platforms. See docs for this function in API level 22.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "setUserData",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n AUTHENTICATE_ACCOUNTS permission and same UID as account's authenticator\n is needed for those platforms. See docs for this function in API level 22.\n\n \n Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS"
+    },
+    {
+        "class": "android.accounts.AccountManager",
+        "api": "updateCredentials",
+        "permissionText": "NOTE: If targeting your app to work on API level 22 and before,\n MANAGE_ACCOUNTS permission is needed for those platforms. See docs for\n this function in API level 22.\n\n \n Requires android.Manifest.permission.MANAGE_ACCOUNTS"
+    },
+    {
+        "class": "android.accessibilityservice.AccessibilityService",
+        "api": "getFingerprintGestureController",
+        "permissionText": "Get the controller for fingerprint gestures. This feature requires AccessibilityServiceInfo#CAPABILITY_CAN_REQUEST_FINGERPRINT_GESTURES.\n\nNote:  The service must be connected before this method is called.\n\n \n Requires Manifest.permission.USE_FINGERPRINT"
+    }
+]

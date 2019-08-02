@@ -1,0 +1,432 @@
+[
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "ACTION_PHONE_STATE_CHANGED",
+        "permissionText": "The EXTRA_STATE extra indicates the new call state.\n If a receiving app has Manifest.permission.READ_CALL_LOG permission, a second\n extra EXTRA_INCOMING_NUMBER provides the phone number for incoming and outgoing\n calls as a String."
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "ACTION_RESPOND_VIA_MESSAGE",
+        "permissionText": "Note:\n The intent-filter that consumes this Intent needs to be in a Service\n that requires the\n permission Manifest.permission.SEND_RESPOND_VIA_MESSAGE."
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "EXTRA_INCOMING_NUMBER",
+        "permissionText": "This extra is only populated for receivers of the ACTION_PHONE_STATE_CHANGED\n broadcast which have been granted the Manifest.permission.READ_CALL_LOG and\n Manifest.permission.READ_PHONE_STATE permissions."
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "doesSwitchMultiSimConfigTriggerReboot",
+        "permissionText": "Requires Permission:\n READ_PHONE_STATE or that the\n calling app has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getAllCellInfo",
+        "permissionText": "This method is preferred over using getCellLocation().\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getCarrierConfig",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n\n \n This method may take several seconds to complete, so it should\n only be called from a worker thread.\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getCellLocation",
+        "permissionText": "Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getDataNetworkType",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getDeviceSoftwareVersion",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n \n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getEmergencyNumberList",
+        "permissionText": "Requires permission Manifest.permission.READ_PHONE_STATE or the calling\n app has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getEmergencyNumberList",
+        "permissionText": "Requires permission Manifest.permission.READ_PHONE_STATE or the calling\n app has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getForbiddenPlmns",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getGroupIdLevel1",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n \n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getLine1Number",
+        "permissionText": "Requires Permission:\n     READ_PHONE_STATE,\n     READ_SMS,\n     READ_PHONE_NUMBERS,\n     that the caller is the default SMS app,\n     or that the caller has carrier privileges (see hasCarrierPrivileges()).\n \n \n Requires Manifest.permission.READ_PHONE_STATE or Manifest.permission.READ_SMS or Manifest.permission.READ_PHONE_NUMBERS"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getNai",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n \n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getPreferredOpportunisticDataSubscription",
+        "permissionText": "Requires that the calling app has carrier privileges (see hasCarrierPrivileges()),\n or has either READ_PRIVILEGED_PHONE_STATE\n or READ_PHONE_STATE permission.\n \n Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE or Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getServiceState",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges())\n and Manifest.permission.ACCESS_COARSE_LOCATION.\n \n \n Requires Manifest.permission.READ_PHONE_STATE and Manifest.permission.ACCESS_COARSE_LOCATION"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getUiccCardsInfo",
+        "permissionText": "See UiccCardInfo for more details on the kind of information available.\n\n \n Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getVisualVoicemailPackageName",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getVoiceMailAlphaTag",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n \n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getVoiceMailNumber",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n \n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "getVoiceNetworkType",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n \n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "isDataEnabled",
+        "permissionText": "Requires one of the following permissions:\n Manifest.permission.ACCESS_NETWORK_STATE,\n Manifest.permission.MODIFY_PHONE_STATE, or that the calling app has carrier\n privileges (see hasCarrierPrivileges())."
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "isDataRoamingEnabled",
+        "permissionText": "Requires one of the following permissions:\n Manifest.permission.ACCESS_NETWORK_STATE,\n Manifest.permission.READ_PHONE_STATE or that the calling app\n has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.ACCESS_NETWORK_STATE or Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "isMultiSimSupported",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "requestCellInfoUpdate",
+        "permissionText": "Any available results from this request will be provided by calls to\n onCellInfoChanged()\n for each active subscription.\n\n \n Requires Manifest.permission.ACCESS_FINE_LOCATION"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "requestNetworkScan",
+        "permissionText": "Requires Permission:\n MODIFY_PHONE_STATE or that the calling\n app has carrier privileges (see hasCarrierPrivileges())\n and Manifest.permission.ACCESS_FINE_LOCATION.\n\n If the system-wide location switch is off, apps may still call this API, with the\n following constraints:"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "sendUssdRequest",
+        "permissionText": "Requires permission:\n Manifest.permission.CALL_PHONE\n \n Requires Manifest.permission.CALL_PHONE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "setDataEnabled",
+        "permissionText": "Requires Permission:\n MODIFY_PHONE_STATE or that the calling\n app has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "setNetworkSelectionModeAutomatic",
+        "permissionText": "Requires Permission:\n MODIFY_PHONE_STATE or that the calling\n app has carrier privileges (see hasCarrierPrivileges()).\n \n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "setNetworkSelectionModeManual",
+        "permissionText": "Requires Permission:\n MODIFY_PHONE_STATE or that the calling\n app has carrier privileges (see hasCarrierPrivileges()).\n\n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.TelephonyManager",
+        "api": "switchMultiSimConfig",
+        "permissionText": "Requires Permission:\n MODIFY_PHONE_STATE or that the\n calling app has carrier privileges (see hasCarrierPrivileges()).\n\n Note: with only carrier privileges, it is not allowed to switch from multi-sim\n to single-sim\n\n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.provider.Telephony.Sms.Intents",
+        "api": "DATA_SMS_RECEIVED_ACTION",
+        "permissionText": "Requires Manifest.permission.RECEIVE_SMS to receive."
+    },
+    {
+        "class": "android.provider.Telephony.Sms.Intents",
+        "api": "SIM_FULL_ACTION",
+        "permissionText": "Requires Manifest.permission.RECEIVE_SMS to receive."
+    },
+    {
+        "class": "android.provider.Telephony.Sms.Intents",
+        "api": "SMS_CB_RECEIVED_ACTION",
+        "permissionText": "Requires Manifest.permission.RECEIVE_SMS to receive."
+    },
+    {
+        "class": "android.provider.Telephony.Sms.Intents",
+        "api": "SMS_DELIVER_ACTION",
+        "permissionText": "Note:\n The broadcast receiver that filters for this intent must declare\n Manifest.permission.BROADCAST_SMS as a required permission in\n the <receiver> tag."
+    },
+    {
+        "class": "android.provider.Telephony.Sms.Intents",
+        "api": "SMS_RECEIVED_ACTION",
+        "permissionText": "Requires Manifest.permission.RECEIVE_SMS to receive."
+    },
+    {
+        "class": "android.provider.Telephony.Sms.Intents",
+        "api": "SMS_REJECTED_ACTION",
+        "permissionText": "Requires Manifest.permission.RECEIVE_SMS to receive."
+    },
+    {
+        "class": "android.provider.Telephony.Sms.Intents",
+        "api": "SMS_SERVICE_CATEGORY_PROGRAM_DATA_RECEIVED_ACTION",
+        "permissionText": "Requires Manifest.permission.RECEIVE_SMS to receive."
+    },
+    {
+        "class": "android.provider.Telephony.Sms.Intents",
+        "api": "WAP_PUSH_DELIVER_ACTION",
+        "permissionText": "Requires Manifest.permission.RECEIVE_MMS or\n Manifest.permission.RECEIVE_WAP_PUSH (depending on WAP PUSH type) to\n receive."
+    },
+    {
+        "class": "android.provider.Telephony.Sms.Intents",
+        "api": "WAP_PUSH_RECEIVED_ACTION",
+        "permissionText": "Requires Manifest.permission.RECEIVE_MMS or\n Manifest.permission.RECEIVE_WAP_PUSH (depending on WAP PUSH type) to\n receive."
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "acceptHandover",
+        "permissionText": "This method is called from the receiving side of a handover to indicate a desire to\n accept the handover of an ongoing call to another ConnectionService identified by\n PhoneAccountHandle destAcct. For managed ConnectionServices, the specified\n PhoneAccountHandle must have been registered with registerPhoneAccount(PhoneAccount) and\n the user must have enabled the corresponding PhoneAccount.  This can be checked using\n getPhoneAccount(PhoneAccountHandle). Self-managed ConnectionServices must have\n Manifest.permission.MANAGE_OWN_CALLS to handover a call to it."
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "acceptRingingCall",
+        "permissionText": "If there is a ringing incoming call, this method accepts the call on behalf of the user,\n with the specified video state.\n\n Requires permission: Manifest.permission.MODIFY_PHONE_STATE or\n Manifest.permission.ANSWER_PHONE_CALLS\n\n \n Requires Manifest.permission.ANSWER_PHONE_CALLS or Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "acceptRingingCall",
+        "permissionText": "If there is a ringing incoming call, this method accepts the call on behalf of the user.\n\n If the incoming call is a video call, the call will be answered with the same video state as\n the incoming call requests.  This means, for example, that an incoming call requesting\n VideoProfile#STATE_BIDIRECTIONAL will be answered, accepting that state.\n\n Requires permission: Manifest.permission.MODIFY_PHONE_STATE or\n Manifest.permission.ANSWER_PHONE_CALLS\n\n \n Requires Manifest.permission.ANSWER_PHONE_CALLS or Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "addNewIncomingCall",
+        "permissionText": "Registers a new incoming call. A ConnectionService should invoke this method when it\n has an incoming call. For managed ConnectionServices, the specified\n PhoneAccountHandle must have been registered with registerPhoneAccount(PhoneAccount) and\n the user must have enabled the corresponding PhoneAccount.  This can be checked using\n getPhoneAccount(PhoneAccountHandle). Self-managed ConnectionServices must have\n Manifest.permission.MANAGE_OWN_CALLS to add a new incoming call."
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "cancelMissedCallsNotification",
+        "permissionText": "Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "endCall",
+        "permissionText": "Requires permission Manifest.permission.ANSWER_PHONE_CALLS."
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "getAdnUriForPhoneAccount",
+        "permissionText": "Requires permission: Manifest.permission.MODIFY_PHONE_STATE\n\n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "getCallCapablePhoneAccounts",
+        "permissionText": "Returns a list of PhoneAccountHandles which can be used to make and receive phone\n calls. The returned list includes only those accounts which have been explicitly enabled\n by the user.\n\n Requires permission: Manifest.permission.READ_PHONE_STATE\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "getDefaultOutgoingPhoneAccount",
+        "permissionText": "If no PhoneAccount fits the criteria above, this method will return null.\n\n Requires permission: Manifest.permission.READ_PHONE_STATE\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "getLine1Number",
+        "permissionText": "Return the line 1 phone number for given phone account.\n\n Requires permission: Manifest.permission.READ_PHONE_STATE\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "getSelfManagedPhoneAccounts",
+        "permissionText": "Requires permission Manifest.permission.READ_PHONE_STATE, or that the caller\n is the default dialer app."
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "getUserSelectedOutgoingPhoneAccount",
+        "permissionText": "The default dialer has access to use this method.\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "getVoiceMailNumber",
+        "permissionText": "Return the voicemail number for a given phone account.\n\n Requires permission: Manifest.permission.READ_PHONE_STATE\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "handleMmi",
+        "permissionText": "Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "handleMmi",
+        "permissionText": "Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "isInCall",
+        "permissionText": "Requires permission: Manifest.permission.READ_PHONE_STATE\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "isInManagedCall",
+        "permissionText": "Requires permission: Manifest.permission.READ_PHONE_STATE\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "isTtySupported",
+        "permissionText": "Returns whether TTY is supported on this device.\n \n \n Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE or Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "isVoiceMailNumber",
+        "permissionText": "Return whether a given phone number is the configured voicemail number for a\n particular phone account.\n\n Requires permission: Manifest.permission.READ_PHONE_STATE\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "placeCall",
+        "permissionText": "Places a new outgoing call to the provided address using the system telecom service with\n the specified extras.\n\n This method is equivalent to placing an outgoing call using Intent#ACTION_CALL,\n except that the outgoing call will always be sent via the system telecom service. If\n method-caller is either the user selected default dialer app or preloaded system dialer\n app, then emergency calls will also be allowed.\n\n Placing a call via a managed ConnectionService requires permission:\n Manifest.permission.CALL_PHONE\n\n Usage example:"
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "showInCallScreen",
+        "permissionText": "Requires that the method-caller be set as the system dialer app or have the\n Manifest.permission.READ_PHONE_STATE permission."
+    },
+    {
+        "class": "android.telecom.TelecomManager",
+        "api": "silenceRinger",
+        "permissionText": "Requires permission: Manifest.permission.MODIFY_PHONE_STATE or that the\n app fills the dialer role (see getDefaultDialerPackage()).\n \n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.nfc.tech.TagTechnology",
+        "api": "close",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.nfc.tech.TagTechnology",
+        "api": "connect",
+        "permissionText": "Requires the Manifest.permission.NFC permission."
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "addSubscriptionsIntoGroup",
+        "permissionText": "Add a list of subscriptions into a group.\n See createSubscriptionGroup(java.util.List) for more details.\n\n Caller will either have Manifest.permission.MODIFY_PHONE_STATE\n permission or had carrier privilege permission on the subscriptions:\n TelephonyManager#hasCarrierPrivileges() or\n canManageSubscription(android.telephony.SubscriptionInfo)\n\n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "createSubscriptionGroup",
+        "permissionText": "Inform SubscriptionManager that subscriptions in the list are bundled\n as a group. It can be multiple primary (non-opportunistic) subscriptions,\n or one or more primary plus one or more opportunistic subscriptions.\n\n This API will always create a new immutable group and assign group UUID to all the\n subscriptions, regardless whether they are in a group already or not.\n\n Grouped subscriptions will have below behaviors:\n 1) They will share the same user settings.\n 2) The opportunistic subscriptions in the group is considered invisible and will not\n    return from getActiveSubscriptionInfoList(), unless caller has carrier\n    privilege permission of the subscriptions.\n 3) The opportunistic subscriptions in the group can't be active by itself. If all other\n    non-opportunistic ones are deactivated (unplugged or disabled in Settings),\n    the opportunistic ones will be deactivated automatically.\n\n Caller will either have Manifest.permission.MODIFY_PHONE_STATE\n permission or had carrier privilege permission on the subscriptions:\n TelephonyManager#hasCarrierPrivileges() or\n canManageSubscription(android.telephony.SubscriptionInfo)\n\n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "getActiveSubscriptionInfo",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see\n TelephonyManager#hasCarrierPrivileges).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "getActiveSubscriptionInfoCount",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see\n TelephonyManager#hasCarrierPrivileges). In the latter case, the count will include\n only those subscriptions accessible to the caller.\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "getActiveSubscriptionInfoForSimSlotIndex",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see\n TelephonyManager#hasCarrierPrivileges).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "getActiveSubscriptionInfoList",
+        "permissionText": "Requires Permission: READ_PHONE_STATE\n or that the calling app has carrier privileges (see\n TelephonyManager#hasCarrierPrivileges). In the latter case, only records accessible\n to the calling app are returned.\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "getOpportunisticSubscriptions",
+        "permissionText": "Requires Permission:\n READ_PHONE_STATE\n or that the calling app has carrier privileges (see\n TelephonyManager#hasCarrierPrivileges).\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "getSubscriptionsInGroup",
+        "permissionText": "Get subscriptionInfo list of subscriptions that are in the same group of given subId.\n See createSubscriptionGroup(java.util.List) for more details.\n\n Caller will either have Manifest.permission.READ_PHONE_STATE\n permission or had carrier privilege permission on the subscription.\n TelephonyManager#hasCarrierPrivileges()\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "isActiveSubscriptionId",
+        "permissionText": "Checks if the supplied subscription ID corresponds to a subscription which is actively in\n use on the device. An active subscription ID is a valid and usable subscription ID.\n\n \n Requires Manifest.permission.READ_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "removeSubscriptionsFromGroup",
+        "permissionText": "Remove a list of subscriptions from their subscription group.\n See createSubscriptionGroup(java.util.List) for more details.\n\n Caller will either have Manifest.permission.MODIFY_PHONE_STATE\n permission or had carrier privilege permission on the subscriptions:\n TelephonyManager#hasCarrierPrivileges() or\n canManageSubscription(android.telephony.SubscriptionInfo)\n\n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "setOpportunistic",
+        "permissionText": "Set whether a subscription is opportunistic, that is, whether the network it connects\n to has limited coverage. For example, CBRS. Setting a subscription opportunistic has\n following impacts:\n  1) Even if it's active, it will be dormant most of the time. The modem will not try\n     to scan or camp until it knows an available network is nearby to save power.\n  2) Telephony relies on system app or carrier input to notify nearby available networks.\n     See TelephonyManager#updateAvailableNetworks(List, Executor, Consumer)\n     for more information.\n  3) In multi-SIM devices, when the network is nearby and camped, system may automatically\n     switch internet data between it and default data subscription, based on carrier\n     recommendation and its signal strength and metered-ness, etc.\n\n\n Caller will either have Manifest.permission.MODIFY_PHONE_STATE or carrier\n privilege permission of the subscription.\n\n \n Requires Manifest.permission.MODIFY_PHONE_STATE"
+    },
+    {
+        "class": "android.telephony.SubscriptionManager",
+        "api": "switchToSubscription",
+        "permissionText": "Switch to a certain subscription\n\n\n \n Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"
+    },
+    {
+        "class": "android.os.StrictMode.VmPolicy.Builder",
+        "api": "detectFileUriExposure",
+        "permissionText": "This exposure is discouraged since the receiving app may not have access to the\n shared path. For example, the receiving app may not have requested the Manifest.permission.READ_EXTERNAL_STORAGE runtime permission, or the\n platform may be sharing the Uri across user profile boundaries."
+    },
+    {
+        "class": "android.os.storage.StorageVolume",
+        "api": "createAccessIntent",
+        "permissionText": "Access to the entire volume is only available for non-primary volumes (for the primary\n volume, apps can use the Manifest.permission.READ_EXTERNAL_STORAGE and\n Manifest.permission.WRITE_EXTERNAL_STORAGE permissions) and should be used\n with caution, since users are more likely to deny access when asked for entire volume access\n rather than specific directories."
+    },
+    {
+        "class": "android.util.StatsLog",
+        "api": "logBinaryPushStateChanged",
+        "permissionText": "Logs an event for binary push for module updates.\n\n \n Requires Manifest.permission.DUMP and Manifest.permission.PACKAGE_USAGE_STATS"
+    },
+    {
+        "class": "android.telephony.SmsManager",
+        "api": "getSmsMessagesForFinancialApp",
+        "permissionText": "Manifest.permission.SMS_FINANCIAL_TRANSACTIONS"
+    },
+    {
+        "class": "android.telephony.SmsManager",
+        "api": "injectSmsPdu",
+        "permissionText": "Requires permission: Manifest.permission.MODIFY_PHONE_STATE or carrier\n privileges per TelephonyManager.hasCarrierPrivileges()."
+    },
+    {
+        "class": "android.telephony.SmsManager",
+        "api": "sendDataMessage",
+        "permissionText": "Note: Using this method requires that your app has the\n Manifest.permission.SEND_SMS permission."
+    },
+    {
+        "class": "android.telephony.SmsManager",
+        "api": "sendMultipartTextMessage",
+        "permissionText": "Note: Using this method requires that your app has the\n Manifest.permission.SEND_SMS permission."
+    },
+    {
+        "class": "android.telephony.SmsManager",
+        "api": "sendTextMessage",
+        "permissionText": "Note: Using this method requires that your app has the\n Manifest.permission.SEND_SMS permission."
+    },
+    {
+        "class": "android.telephony.SmsManager",
+        "api": "sendTextMessageWithoutPersisting",
+        "permissionText": "Requires Permission: Both Manifest.permission.SEND_SMS and\n Manifest.permission.MODIFY_PHONE_STATE, or that the calling app has carrier\n privileges (see TelephonyManager#hasCarrierPrivileges), or that the calling app is\n the default IMS app (see\n CarrierConfigManager#KEY_CONFIG_IMS_PACKAGE_OVERRIDE_STRING)."
+    }
+]

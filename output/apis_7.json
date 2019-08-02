@@ -1,0 +1,62 @@
+[
+    {
+        "class": "android.net.sip.SipAudioCall",
+        "api": "setSpeakerMode",
+        "permissionText": "Note: Requires the\n   Manifest.permission.MODIFY_AUDIO_SETTINGS permission."
+    },
+    {
+        "class": "android.net.sip.SipAudioCall",
+        "api": "startAudio",
+        "permissionText": "Note: Requires the\n   Manifest.permission.RECORD_AUDIO,\n   Manifest.permission.ACCESS_WIFI_STATE and\n   Manifest.permission.WAKE_LOCK permissions."
+    },
+    {
+        "class": "android.provider.Settings.System",
+        "api": "canWrite",
+        "permissionText": "Checks if the specified app can modify system settings. As of API\n level 23, an app cannot modify system settings unless it declares the\n Manifest.permission.WRITE_SETTINGS\n permission in its manifest, and the user specifically grants\n the app this capability. To prompt the user to grant this approval,\n the app must send an intent with the action Settings.ACTION_MANAGE_WRITE_SETTINGS, which causes\n the system to display a permission management screen."
+    },
+    {
+        "class": "android.provider.Settings",
+        "api": "ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        "permissionText": "Activity Action: Ask the user to allow an app to ignore battery optimizations (that is,\n put them on the whitelist of apps shown by\n ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS).  For an app to use this, it also\n must hold the Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS\n permission."
+    },
+    {
+        "class": "android.provider.Settings",
+        "api": "INTENT_CATEGORY_USAGE_ACCESS_CONFIG",
+        "permissionText": "An activity that provides a user interface for adjusting usage access related\n preferences for its containing application. Optional but recommended for apps that\n use Manifest.permission.PACKAGE_USAGE_STATS."
+    },
+    {
+        "class": "android.provider.Settings",
+        "api": "canDrawOverlays",
+        "permissionText": "Checks if the specified context can draw on top of other apps. As of API\n level 23, an app cannot draw on top of other apps unless it declares the\n Manifest.permission.SYSTEM_ALERT_WINDOW permission in its\n manifest, and the user specifically grants the app this\n capability. To prompt the user to grant this approval, the app must send an\n intent with the action\n ACTION_MANAGE_OVERLAY_PERMISSION, which\n causes the system to display a permission management screen."
+    },
+    {
+        "class": "android.app.Service",
+        "api": "startForeground",
+        "permissionText": "Apps targeting API Build.VERSION_CODES.P or later must request\n the permission Manifest.permission.FOREGROUND_SERVICE in order to use\n this API."
+    },
+    {
+        "class": "android.media.RingtoneManager",
+        "api": "getCursor",
+        "permissionText": "Note that the list of ringtones available will differ depending on whether the caller\n has the Manifest.permission.READ_EXTERNAL_STORAGE permission."
+    },
+    {
+        "class": "android.media.RingtoneManager",
+        "api": "getValidRingtoneUri",
+        "permissionText": "Returns a valid ringtone URI. No guarantees on which it returns. If it\n cannot find one, returns null. If it can only find one on external storage and the caller\n doesn't have the Manifest.permission.READ_EXTERNAL_STORAGE permission,\n returns null."
+    },
+    {
+        "class": "android.content.RestrictionsManager",
+        "api": "ACTION_REQUEST_PERMISSION",
+        "permissionText": "The BroadcastReceiver must require the Manifest.permission.BIND_DEVICE_ADMIN\n permission to ensure that only the system can send the broadcast."
+    },
+    {
+        "class": "android.os.RecoverySystem",
+        "api": "installPackage",
+        "permissionText": "Reboots the device in order to install the given update\n package.\n Requires the Manifest.permission.REBOOT permission.\n\n \n Requires android.Manifest.permission.RECOVERY"
+    },
+    {
+        "class": "android.os.RecoverySystem",
+        "api": "rebootWipeUserData",
+        "permissionText": "Reboots the device and wipes the user data and cache\n partitions.  This is sometimes called a \"factory reset\", which\n is something of a misnomer because the system partition is not\n restored to its factory state.  Requires the\n Manifest.permission.REBOOT permission."
+    }
+]

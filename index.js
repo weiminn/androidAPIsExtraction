@@ -42,7 +42,7 @@ var scrapePermission = async (link) => {
   });
 }
 
-var batchNo = 1;
+var batchNo = 9;
 var links = JSON.parse(fs.readFileSync(`./class_links/classes_${batchNo}.json`));
 var permissions = [];
 
